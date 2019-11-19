@@ -1,0 +1,233 @@
+@import "../App.scss";
+
+.section_wrapper {
+  padding-top: 31vh;
+  padding-bottom: 29vh;
+}
+
+.section_wrapper,
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.one.mcb-wrap {
+  width: 100%;
+}
+
+.mcb-wrap {
+  float: left;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+#Top_bar .column {
+  margin-bottom: 0;
+}
+.one.column {
+  width: 98%;
+}
+
+.column,
+.columns {
+  float: left;
+  margin: 0 1% 100px;
+}
+
+@keyframes line_through {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 110%;
+  }
+}
+
+.home-landing-slogan-bullshit .line_through::after {
+  content: " ";
+  animation-name: line_through;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.home-landing-slogan {
+  font-size: 64px;
+  line-height: 100%;
+  font-weight: 100;
+  display: table-caption;
+}
+
+.home-landing-slogan-bullshit {
+  color: $bullshit-font-color;
+  position: relative;
+  display: inline-block;
+}
+
+.home-landing-slogan-bullshit .line_through {
+  content: "";
+  border-bottom: 2px solid $bullshit-font-color;
+  width: 110%;
+  position: absolute;
+  left: -20px;
+  top: 56%;
+  border-image: linear-gradient(to right, $bullshit-font-color, $bullshit-right-font-color);
+  border-image-slice: 1;
+}
+
+.home-landing-slogan-bullshit {
+  color: $bullshit-font-color;
+  position: relative;
+  display: inline-block;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(#eee, #333);
+  background: linear-gradient(to right, $bullshit-font-color 0%, #414141 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+hr.no_line {
+  background: none;
+  color: transparent;
+}
+
+.page-hero__subtitle__line {
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
+  font-weight: 100;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#particles-js {
+  position: absolute;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1240px) {
+  .section_wrapper,
+  .container {
+    max-width: 1060px;
+  }
+}
+
+@media only screen and (max-width: 1239px) and (min-width: 960px) {
+  .section_wrapper,
+  .container,
+  .with_aside .content_wrapper {
+    max-width: 940px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .column.mcb-column.one-sixth.column_image.collab-image-smaller-mobile {
+    width: 24% !important;
+    clear: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .home-landing-slogan-bullshit .line_through {
+    border-bottom: 1px solid $bullshit-font-color;
+    left: -14px;
+    top: 56%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section_wrapper,
+  .container,
+  .four.columns .widget-area {
+    max-width: 480px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section_wrapper,
+  .container,
+  .four.columns .widget-area {
+    max-width: 700px !important;
+    padding-left: 33px !important;
+    padding-right: 33px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  h2 {
+    font-size: 34px !important;
+    line-height: 41px !important;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .home-landing-slogan-bullshit .line_through {
+    border-bottom: 1px solid $bullshit-font-color;
+    left: -9px;
+    top: 56%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) {
+  .home-landing-slogan {
+    font-size: 40px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) {
+  .home-landing-slogan {
+    font-size: 44px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .home-landing-slogan {
+    font-size: 53px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .home-landing-slogan {
+    font-size: 85px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .home-landing-slogan {
+    font-size: 115px;
+  }
+}
